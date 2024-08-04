@@ -44,7 +44,7 @@ bot.start(async (ctx) => {
     }
 
     try {
-      await axios.put('https://lunarapp.thelunarcoin.com/backend/api/squad/add', {
+      await axios.put('https://lunarapp.thelunarcoin.com/testbackend/api/squad/add', {
         refUserId: refUserId.toString(), // Ensure refUserId is a string
         newUserId: userId.toString(), // Ensure newUserId is a string
         newUserName: userName.toString() // Ensure newUserName is a string
