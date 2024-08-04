@@ -7,7 +7,7 @@ const token = process.env.TOKEN || '7408945050:AAHCZBZD8l2kaBSZGIGTTe_L_FtEKqamI
 const bot = new Telegraf(token);
 
 // Web App Link
-const web_link = 'https://demolunar.vercel.app/';
+const web_link = 'https://lunarapp.thelunarcoin.com/';
 const Telegram = 'https://t.me/yourlunar_bot';
 
 // Start Handler
