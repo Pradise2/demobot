@@ -64,6 +64,18 @@ bot.command('referral', async (ctx) => {
   ctx.reply(`Your referral code is: ${referralCode}`);
 });
 
+bot.command('totalusers', async (ctx) => {
+  try {
+    const chatId = ctx.chat.id;
+    const totalUsers = await bot.telegram.getChatMembersCount(chatId);
+    await ctx.reply(`Total number of users in this chat: ${totalUsers}`);
+  } catch (error) {
+    console.error('Error retrieving total users:', error);
+    await ctx.reply('Error retrieving total users. Please try again later.');
+  }
+});
+
+
 // Express server setup
 app.use(express.json());
 
